@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Formulário Pessoal</title>
+  </head>
+
+  <body>
+   
+
+    <form action="">
+        <h1 id="title">Bem vindo(a)</h1>
+        <h2 class="subtitle">Informe os seus dados abaixo!</h2>
+        
+        <div class="input-container">
+          <input
+            class="input-form"
+            id="matricula"
+            type="text"
+            name="matricula"
+            placeholder="Número de Matrícula"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <input
+            class="input-form"
+            id="nome"
+            type="text"
+            name="nome"
+            placeholder="Nome Completo"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <input
+            class="input-form"
+            id="cpf"
+            type="text"
+            name="cpf"
+            placeholder="CPF"
+            required
+          />
+        </div>
+        <div class="input-container">
+          <input
+            class="input-form"
+            id="data"
+            type="date"
+            name="data"
+            required
+          />
+        </div>
+      <div class="input-container">
+        <input 
+          type="submit"
+          class="submit"
+          onclick="Enviar();"
+          value="Enviar"
+        />
+      </div>
+    </form>
+
+    <script>
+      function Enviar() {
+        var matricula = document.getElementById("matricula");
+        var nome = document.getElementById("nome");
+        var cpf = document.getElementById("cpf");
+        var data = document.getElementById("data");
+
+        alert(
+          "Matrícula: " +
+            matricula.value +
+            "\nNome: " +
+            nome.value +
+            "\nCPF: " +
+            cpf.value +
+            "\nData de Nascimento: " +
+            data.value
+        );
+      }
+    </script>
+  </body>
+</html>

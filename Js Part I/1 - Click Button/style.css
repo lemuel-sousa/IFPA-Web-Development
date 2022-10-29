@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 100px;
+
+    width: 400px;
+    height: 500px;
+    border-radius: 8px;
+    background-color: #3d348b;
+  }
+
+  #title {
+    width: 300px;
+    height: 80px;
+    font-family: "Signika Negative", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    background-color: #efca08;
+    border-radius: 8px;
+  }
+
+  .btn {
+    font-family: "Signika Negative", sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7678ed;
+    color: #fff;
+  }
+
+  .btn:hover {
+    animation-name: btn-hover;
+    animation-duration: 500ms;
+  }
+
+  @keyframes btn-hover {
+    100% {
+      font-size: 20px;
+      padding: 18px;
+      background-color: #0f7979;
+    }
+  }

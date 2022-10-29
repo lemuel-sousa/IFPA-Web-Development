@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Paragrafo</title>
+  </head>
+
+  <body>
+    <p onclick="changeParagraph()" id="paragraph" class="shape">
+      “JavaScript faz parte da tríade de tecnologias que todos os
+      desenvolvedores Web devem conhecer: HTML, para especificar o conteúdo de
+      páginas Web; CSS, para especificar a apresentação dessas páginas; e
+      JavaScript, para especificar o comportamento delas.”
+    </p>
+
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      
+      function changeParagraph() {
+          console.log(paragraph.classList.toString().split(" ").includes("paragraphClick"))
+          const hasparagraphclass = paragraph.classList.toString().split(" ").includes("paragraphClick")
+
+         paragraph.classList.add("paragraphClick");
+
+        if (hasparagraphclass) {
+            paragraph.classList.toggle("paragraphClick");
+        }
+        
+      }
+    </script>
+  </body>
+</html>
